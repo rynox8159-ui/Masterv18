@@ -1,0 +1,67 @@
+services:
+  mongodb:
+    image: mongo:7
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    restart: unless-stopped
+    env_file:
+      - path: ./main_source_code/backend/.env
+        required: false
+    environment:
+      MONGO_URL: mongodb://mongodb:27017
+      BACKEND_HOST: 0.0.0.0
+      BACKEND_PORT: 7007
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import socket; socket.create_connection(('127.0.0.1', 7007), timeout=3).close()"
+      interval: 30s
+      timeout: 5s
+      retries: 10
+      start_period: 120s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: main_source_code/frontend/Dockerfile
+      args:
+        VITE_API_SAME_ORIGIN: "true"
+    restart: unless-stopped
+    environment:
+      BACKEND_URL: http://backend:7007
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  mongodb_data:

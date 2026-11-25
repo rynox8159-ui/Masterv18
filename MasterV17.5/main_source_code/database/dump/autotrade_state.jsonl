@@ -1,0 +1,1 @@
+{"_id": {"$oid": "6add456d8ea91732b38e8894"}, "id": "demo", "cancelledLate": 0, "consecutiveLosses": 0, "cooldownUntil": 0.0, "dailyPnl": -0.12, "dailyTrades": 2, "day": "2026-10-25", "dayStartBalance": 9887.02, "lastPayoutRate": 0.88, "losses": 1, "streakPauses": 0, "ties": 0, "totalPnl": -0.12, "wins": 1}

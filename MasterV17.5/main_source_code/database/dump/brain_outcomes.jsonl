@@ -1,0 +1,2 @@
+{"_id": {"$oid": "6add49165b66942e4035d394"}, "symbol": "1HZ10V", "contractType": "CALL", "bucket": "stream:1m", "result": "WIN", "profit": 0.88, "mode": "demo", "closedAt": 1792887062.4062226}
+{"_id": {"$oid": "6add47aecb4520d5f0e71016"}, "symbol": "1HZ10V", "contractType": "CALL", "bucket": "stream:1m", "result": "LOSS", "profit": -1.0, "mode": "demo", "closedAt": 1792886702.3433437}

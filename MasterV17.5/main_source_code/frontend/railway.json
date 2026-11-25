@@ -1,0 +1,12 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "buildCommand": "npm --prefix dependencies/frontend install && ln -sfn ../../dependencies/frontend/node_modules main_source_code/frontend/node_modules && npm --prefix dependencies/frontend run build"
+  },
+  "deploy": {
+    "startCommand": "npm --prefix dependencies/frontend start",
+    "healthcheckPath": "/healthz",
+    "healthcheckTimeout": 30,
+    "restartPolicyType": "on_failure"
+  }
+}

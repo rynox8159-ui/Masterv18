@@ -1,0 +1,31 @@
+MASTER V17.3 - LOCAL PC RUN (Windows / Linux / macOS)
+====================================================
+Needs: Python 3.11 or 3.12, Node.js 20+, MongoDB 6+ running on 127.0.0.1:27017.
+This ZIP already contains main_source_code/backend/.env with your keys (keep it private).
+
+Docker (isolated runtime; source and skills remain on the host):
+  docker compose up --build
+  Open http://localhost:3000
+  Stop with docker compose down. MongoDB data remains in the mongodb_data volume.
+  Optional: create main_source_code/backend/.env from .env.example for your private settings.
+  Docker builds exclude local env files, node_modules, and Python virtual environments.
+
+Windows:     setup.bat   (one time)  ->  start.bat   (every time; waits for MongoDB + backend + frontend health, then opens the browser)
+Linux/macOS: ./scripts/local_pc/setup-linux.sh     (one time)  ->  ./scripts/local_pc/start-all.sh   (every time)
+
+Backend : http://127.0.0.1:8001  (BACKEND_PORT in main_source_code/backend/.env; the frontend proxy follows it)
+Frontend: http://localhost:5173
+Old data (optional): python main_source_code/database/restore_mongo.py
+Training is automatic (TRAIN_ALL_ON_STARTUP=true, then every 24h); Training tab -> Train All runs it on demand.
+Auto trade: /autotrade -> tabs Live P&L / Open Trades / History / Risk Settings -> Start DEMO first (real = operator key + typed REAL).
+Accuracy proof: /accuracy -> per pair win rate, samples, break-even, last training; PROMOTED only at >=58% over >=300 OOS trades.
+Quotex (your own Chrome tab, manual login): 1) scripts/local_pc/start-chrome-debug.(bat|sh)  2) log in to Quotex in that Chrome
+                                             3) scripts/local_pc/start-sniffer.(bat|sh)  (or /sniffer -> Start WS sniffer in the UI)
+Quotex in a separate Chromium window instead: scripts/local_pc/start-observer.(bat|sh)
+Quotex blocked on the cloud server? Run scripts/local_pc/start-observer-cloud.(bat|sh) on your home PC.
+Prepare any local MongoDB (collections + indexes): python main_source_code/database/init_db.py   (setup scripts run it)
+UI smoke test (Playwright): scripts/local_pc/run-ui-smoke.(sh|bat)  [http://localhost:5173]
+Auto trade V17.3: /autotrade -> DEMO | REAL | DEMO + REAL -> Accumulator setups only -> stake and risk limits -> START.
+Binary Rise/Fall signals are displayed separately and are never submitted by the dashboard auto-trader. Brain overview: /api/v1/brain/overview
+Training V17.3: 2 markets in parallel, full retrain every 6h, incremental retrain every 30 min from settled signals, Training tab -> Retrain Active.
+Check everything: python main_source_code/backend/local_doctor.py

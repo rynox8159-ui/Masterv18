@@ -1,0 +1,73 @@
+{"_id": {"$oid": "6add4fe98ea91732b39f46c1"}, "source": "deriv", "timeframe": "5m", "symbol": "CRASH1000", "algorithm": "micro_momentum", "updatedAt": 1792888806.1390002, "wins": 1}
+{"_id": {"$oid": "6add4e078ea91732b39cbcce"}, "symbol": "CRASH900", "timeframe": "1m", "algorithm": "support_resistance", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 2}
+{"_id": {"$oid": "6add4d8c8ea91732b39c03e8"}, "algorithm": "LIVE_CONFLUENCE_FUSION_TRIGGERED", "source": "deriv", "symbol": "CRASH1000", "timeframe": "1m", "updatedAt": 1792888385.6375635, "wins": 3}
+{"_id": {"$oid": "6add4d8c8ea91732b39c03e7"}, "algorithm": "algorithm_layer", "symbol": "CRASH1000", "timeframe": "1m", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 3}
+{"_id": {"$oid": "6add4d8c8ea91732b39c03e6"}, "source": "deriv", "algorithm": "structure", "symbol": "CRASH1000", "timeframe": "1m", "updatedAt": 1792888385.6375635, "wins": 3}
+{"_id": {"$oid": "6add4d8c8ea91732b39c03e5"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH1000", "algorithm": "candle_pattern", "updatedAt": 1792888385.6375635, "wins": 3}
+{"_id": {"$oid": "6add4d8c8ea91732b39c03e3"}, "timeframe": "1m", "symbol": "CRASH1000", "algorithm": "momentum", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 3}
+{"_id": {"$oid": "6add4d8c8ea91732b39c03e2"}, "symbol": "CRASH1000", "timeframe": "1m", "algorithm": "ema_trend", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 3}
+{"_id": {"$oid": "6add4d8c8ea91732b39c03e0"}, "timeframe": "1m", "source": "deriv", "algorithm": "micro_momentum", "symbol": "CRASH1000", "updatedAt": 1792888385.6375635, "wins": 3}
+{"_id": {"$oid": "6add4d8c8ea91732b39c039b"}, "algorithm": "momentum", "source": "deriv", "symbol": "CRASH1000", "timeframe": "5m", "updatedAt": 1792888806.1390002, "wins": 3}
+{"_id": {"$oid": "6add4d8c8ea91732b39c039a"}, "source": "deriv", "timeframe": "5m", "symbol": "CRASH1000", "algorithm": "bollinger", "updatedAt": 1792888806.1390002, "wins": 3}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6dc"}, "algorithm": "CONFLUENCE_SCORED", "symbol": "BOOM1000", "timeframe": "1m", "source": "deriv", "updatedAt": 1792887967.6615913, "wins": 1}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6db"}, "symbol": "BOOM1000", "timeframe": "1m", "algorithm": "algorithm_layer", "source": "deriv", "updatedAt": 1792887967.6615913, "wins": 1}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6da"}, "algorithm": "structure", "source": "deriv", "symbol": "BOOM1000", "timeframe": "1m", "updatedAt": 1792887967.6615913, "wins": 1}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6d9"}, "source": "deriv", "timeframe": "1m", "symbol": "BOOM1000", "algorithm": "support_resistance", "updatedAt": 1792887967.6615913, "wins": 1}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6d8"}, "algorithm": "candle_pattern", "source": "deriv", "timeframe": "1m", "symbol": "BOOM1000", "updatedAt": 1792887967.6615913, "wins": 1}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6d7"}, "symbol": "BOOM1000", "timeframe": "1m", "algorithm": "momentum", "source": "deriv", "updatedAt": 1792887967.6615913, "wins": 1}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6d6"}, "algorithm": "macd", "source": "deriv", "symbol": "BOOM1000", "timeframe": "1m", "updatedAt": 1792887967.6615913, "wins": 1}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6d5"}, "timeframe": "1m", "symbol": "BOOM1000", "algorithm": "ema_trend", "source": "deriv", "updatedAt": 1792887967.6615913, "wins": 1}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6d4"}, "symbol": "BOOM1000", "source": "deriv", "algorithm": "micro_momentum", "timeframe": "1m", "updatedAt": 1792887967.6615913, "wins": 1}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6b9"}, "algorithm": "support_resistance", "symbol": "BOOM300N", "timeframe": "1m", "source": "deriv", "losses": 1, "updatedAt": 1792887967.6615913}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab694"}, "algorithm": "LIVE_CONFLUENCE_FUSION_TRIGGERED", "source": "deriv", "timeframe": "1m", "symbol": "CRASH900", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab693"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH900", "algorithm": "algorithm_layer", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab692"}, "algorithm": "structure", "symbol": "CRASH900", "timeframe": "1m", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab691"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH900", "algorithm": "candle_pattern", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab690"}, "algorithm": "momentum", "source": "deriv", "symbol": "CRASH900", "timeframe": "1m", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab68f"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH900", "algorithm": "ema_trend", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab68e"}, "symbol": "CRASH900", "timeframe": "1m", "algorithm": "micro_momentum", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add4c638ea91732b39a5773"}, "source": "deriv", "timeframe": "5m", "symbol": "CRASH1000", "algorithm": "LIVE_CONFLUENCE_FUSION_TRIGGERED", "updatedAt": 1792888806.1390002, "wins": 4}
+{"_id": {"$oid": "6add4c638ea91732b39a5772"}, "source": "deriv", "timeframe": "5m", "symbol": "CRASH1000", "algorithm": "algorithm_layer", "updatedAt": 1792888806.1390002, "wins": 4}
+{"_id": {"$oid": "6add4c638ea91732b39a5771"}, "source": "deriv", "timeframe": "5m", "symbol": "CRASH1000", "algorithm": "candle_pattern", "updatedAt": 1792888806.1390002, "wins": 4}
+{"_id": {"$oid": "6add4c638ea91732b39a5770"}, "source": "deriv", "timeframe": "5m", "symbol": "CRASH1000", "algorithm": "stochastic", "updatedAt": 1792888504.3890128, "wins": 3}
+{"_id": {"$oid": "6add4c638ea91732b39a576f"}, "source": "deriv", "timeframe": "5m", "symbol": "CRASH1000", "algorithm": "rsi", "updatedAt": 1792888806.1390002, "wins": 4}
+{"_id": {"$oid": "6add4c638ea91732b39a576e"}, "algorithm": "ema_trend", "source": "deriv", "timeframe": "5m", "symbol": "CRASH1000", "updatedAt": 1792888806.1390002, "wins": 4}
+{"_id": {"$oid": "6add49918ea91732b39608df"}, "algorithm": "stochastic", "symbol": "CRASH600", "timeframe": "1m", "source": "deriv", "updatedAt": 1792887185.009879, "wins": 1}
+{"_id": {"$oid": "6add48298ea91732b3937b89"}, "algorithm": "CONTEXT:STOP_HUNT", "symbol": "CRASH300N", "timeframe": "1m", "source": "deriv", "updatedAt": 1792886886.4737606, "wins": 2}
+{"_id": {"$oid": "6add48298ea91732b3937b87"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH300N", "algorithm": "bollinger", "updatedAt": 1792886886.4737606, "wins": 2}
+{"_id": {"$oid": "6add47398ea91732b391da2d"}, "algorithm": "LIVE_CONFLUENCE_FUSION_TRIGGERED", "symbol": "CRASH500", "timeframe": "1m", "source": "deriv", "losses": 1, "updatedAt": 1792886585.7591443}
+{"_id": {"$oid": "6add47398ea91732b391da2c"}, "timeframe": "1m", "symbol": "CRASH500", "algorithm": "algorithm_layer", "source": "deriv", "losses": 1, "updatedAt": 1792886585.7591443}
+{"_id": {"$oid": "6add47398ea91732b391da2b"}, "timeframe": "1m", "symbol": "CRASH500", "algorithm": "bollinger", "source": "deriv", "losses": 1, "updatedAt": 1792886585.7591443}
+{"_id": {"$oid": "6add47398ea91732b391da2a"}, "symbol": "CRASH500", "timeframe": "1m", "algorithm": "rsi", "source": "deriv", "losses": 1, "updatedAt": 1792886585.7591443}
+{"_id": {"$oid": "6add47398ea91732b391da29"}, "timeframe": "1m", "source": "deriv", "algorithm": "ema_trend", "symbol": "CRASH500", "losses": 1, "updatedAt": 1792886585.7591443}
+{"_id": {"$oid": "6add46c18ea91732b391150f"}, "timeframe": "1m", "symbol": "BOOM300N", "algorithm": "UNSPECIFIED", "source": "deriv", "updatedAt": 1792887063.8689303, "wins": 3}
+{"_id": {"$oid": "6add46c18ea91732b391150e"}, "symbol": "BOOM300N", "source": "deriv", "algorithm": "test", "timeframe": "1m", "updatedAt": 1792887063.8689303, "wins": 3}
+{"_id": {"$oid": "6add46c18ea91732b39114a5"}, "algorithm": "UNSPECIFIED", "symbol": "1HZ10V", "timeframe": "1m", "source": "deriv", "losses": 1, "updatedAt": 1792887063.8689303, "wins": 2}
+{"_id": {"$oid": "6add46c18ea91732b39114a4"}, "source": "deriv", "timeframe": "1m", "symbol": "1HZ10V", "algorithm": "test", "losses": 1, "updatedAt": 1792887063.8689303, "wins": 2}
+{"_id": {"$oid": "6add46858ea91732b3907753"}, "source": "deriv", "timeframe": "1m", "symbol": "BOOM300N", "algorithm": "LIVE_CONFLUENCE_FUSION_TRIGGERED", "updatedAt": 1792887967.6615913, "wins": 1, "losses": 1}
+{"_id": {"$oid": "6add46858ea91732b3907752"}, "source": "deriv", "timeframe": "1m", "symbol": "BOOM300N", "algorithm": "algorithm_layer", "updatedAt": 1792887967.6615913, "wins": 1, "losses": 1}
+{"_id": {"$oid": "6add46858ea91732b3907751"}, "algorithm": "candle_pattern", "symbol": "BOOM300N", "timeframe": "1m", "source": "deriv", "updatedAt": 1792887967.6615913, "wins": 1, "losses": 1}
+{"_id": {"$oid": "6add46858ea91732b3907750"}, "algorithm": "momentum", "symbol": "BOOM300N", "timeframe": "1m", "source": "deriv", "updatedAt": 1792887967.6615913, "wins": 1, "losses": 1}
+{"_id": {"$oid": "6add46858ea91732b390774f"}, "algorithm": "rsi", "symbol": "BOOM300N", "timeframe": "1m", "source": "deriv", "updatedAt": 1792886405.332269, "wins": 1}
+{"_id": {"$oid": "6add46858ea91732b390774e"}, "source": "deriv", "timeframe": "1m", "symbol": "BOOM300N", "algorithm": "macd", "updatedAt": 1792887967.6615913, "wins": 1, "losses": 1}
+{"_id": {"$oid": "6add46858ea91732b390774d"}, "source": "deriv", "timeframe": "1m", "symbol": "BOOM300N", "algorithm": "ema_trend", "updatedAt": 1792887967.6615913, "wins": 1, "losses": 1}
+{"_id": {"$oid": "6add46858ea91732b390774c"}, "algorithm": "micro_momentum", "symbol": "BOOM300N", "timeframe": "1m", "source": "deriv", "updatedAt": 1792887967.6615913, "wins": 1, "losses": 1}
+{"_id": {"$oid": "6add46858ea91732b390773e"}, "algorithm": "LIVE_CONFLUENCE_FUSION_TRIGGERED", "symbol": "CRASH600", "timeframe": "1m", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add46858ea91732b390773d"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH600", "algorithm": "algorithm_layer", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add46858ea91732b390773c"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH600", "algorithm": "structure", "updatedAt": 1792888385.6375635, "wins": 3}
+{"_id": {"$oid": "6add46858ea91732b390773b"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH600", "algorithm": "support_resistance", "updatedAt": 1792886405.332269, "wins": 1}
+{"_id": {"$oid": "6add46858ea91732b390773a"}, "algorithm": "candle_pattern", "symbol": "CRASH600", "timeframe": "1m", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add46858ea91732b3907739"}, "algorithm": "momentum", "symbol": "CRASH600", "timeframe": "1m", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add46858ea91732b3907738"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH600", "algorithm": "rsi", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add46858ea91732b3907737"}, "algorithm": "macd", "symbol": "CRASH600", "timeframe": "1m", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add46858ea91732b3907736"}, "algorithm": "ema_trend", "symbol": "CRASH600", "timeframe": "1m", "source": "deriv", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add46858ea91732b3907735"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH600", "algorithm": "micro_momentum", "updatedAt": 1792888385.6375635, "wins": 4}
+{"_id": {"$oid": "6add455b8ea91732b38e684e"}, "timeframe": "1m", "symbol": "CRASH300N", "algorithm": "LIVE_CONFLUENCE_FUSION_TRIGGERED", "source": "deriv", "updatedAt": 1792887185.009879, "wins": 7, "losses": 1}
+{"_id": {"$oid": "6add455b8ea91732b38e684d"}, "source": "deriv", "algorithm": "algorithm_layer", "symbol": "CRASH300N", "timeframe": "1m", "updatedAt": 1792887185.009879, "wins": 7, "losses": 1}
+{"_id": {"$oid": "6add455b8ea91732b38e684c"}, "algorithm": "structure", "source": "deriv", "symbol": "CRASH300N", "timeframe": "1m", "updatedAt": 1792887185.009879, "wins": 7, "losses": 1}
+{"_id": {"$oid": "6add455b8ea91732b38e684b"}, "symbol": "CRASH300N", "source": "deriv", "algorithm": "support_resistance", "timeframe": "1m", "updatedAt": 1792887185.009879, "wins": 7, "losses": 1}
+{"_id": {"$oid": "6add455b8ea91732b38e684a"}, "symbol": "CRASH300N", "source": "deriv", "algorithm": "candle_pattern", "timeframe": "1m", "updatedAt": 1792887185.009879, "wins": 6, "losses": 1}
+{"_id": {"$oid": "6add455b8ea91732b38e6849"}, "algorithm": "momentum", "source": "deriv", "symbol": "CRASH300N", "timeframe": "1m", "updatedAt": 1792887185.009879, "wins": 7, "losses": 1}
+{"_id": {"$oid": "6add455b8ea91732b38e6848"}, "algorithm": "macd", "source": "deriv", "symbol": "CRASH300N", "timeframe": "1m", "updatedAt": 1792887185.009879, "wins": 4, "losses": 1}
+{"_id": {"$oid": "6add455b8ea91732b38e6847"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH300N", "algorithm": "ema_trend", "updatedAt": 1792887185.009879, "wins": 7, "losses": 1}
+{"_id": {"$oid": "6add455b8ea91732b38e6845"}, "source": "deriv", "timeframe": "1m", "symbol": "CRASH300N", "algorithm": "micro_momentum", "updatedAt": 1792887185.009879, "wins": 7, "losses": 1}

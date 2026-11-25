@@ -1,0 +1,145 @@
+{
+  "exportedAt": 1792888831.9230392,
+  "collections": {
+    "agent_weight_states": {
+      "documents": 14,
+      "limit": 10000
+    },
+    "algorithm_memory": {
+      "documents": 73,
+      "limit": 10000
+    },
+    "autotrade_settings": {
+      "documents": 1,
+      "limit": 10000
+    },
+    "autotrade_state": {
+      "documents": 1,
+      "limit": 10000
+    },
+    "autotrade_trades": {
+      "documents": 3,
+      "limit": 10000
+    },
+    "binary_signal_decisions": {
+      "documents": 28,
+      "limit": 10000
+    },
+    "brain_outcomes": {
+      "documents": 2,
+      "limit": 10000
+    },
+    "brain_stats": {
+      "documents": 1,
+      "limit": 10000
+    },
+    "calibrations": {
+      "documents": 54,
+      "limit": 10000
+    },
+    "deep_model_observations": {
+      "documents": 0,
+      "limit": 10000
+    },
+    "deep_model_online_progress": {
+      "documents": 9,
+      "limit": 10000
+    },
+    "deep_model_registry": {
+      "documents": 0,
+      "limit": 10000
+    },
+    "deep_model_training_runs": {
+      "documents": 7,
+      "limit": 10000
+    },
+    "demo_accounts": {
+      "documents": 0,
+      "limit": 10000
+    },
+    "live_signals": {
+      "documents": 34,
+      "limit": 10000
+    },
+    "market_analyses": {
+      "documents": 43,
+      "limit": 10000
+    },
+    "market_behaviour_notes": {
+      "documents": 86,
+      "limit": 10000
+    },
+    "market_candles": {
+      "documents": 60000,
+      "limit": 60000
+    },
+    "market_features": {
+      "documents": 18745,
+      "limit": 40000
+    },
+    "market_instruments": {
+      "documents": 89,
+      "limit": 10000
+    },
+    "market_intelligence_history": {
+      "documents": 2342,
+      "limit": 10000
+    },
+    "market_memory_events": {
+      "documents": 430,
+      "limit": 10000
+    },
+    "market_ticks": {
+      "documents": 20000,
+      "limit": 20000
+    },
+    "model_observations": {
+      "documents": 34,
+      "limit": 10000
+    },
+    "observer_receipts": {
+      "documents": 0,
+      "limit": 10000
+    },
+    "pair_promotions": {
+      "documents": 86,
+      "limit": 10000
+    },
+    "runtime_events": {
+      "documents": 133,
+      "limit": 5000
+    },
+    "signal_calibration_runs": {
+      "documents": 0,
+      "limit": 10000
+    },
+    "signal_history": {
+      "documents": 2370,
+      "limit": 10000
+    },
+    "signal_market_controls": {
+      "documents": 17,
+      "limit": 10000
+    },
+    "signal_research_candidates": {
+      "documents": 2270,
+      "limit": 10000
+    },
+    "signal_research_runs": {
+      "documents": 0,
+      "limit": 10000
+    },
+    "training_knowledge": {
+      "documents": 9,
+      "limit": 10000
+    },
+    "training_pipeline_runs": {
+      "documents": 7,
+      "limit": 10000
+    },
+    "training_samples": {
+      "documents": 33,
+      "limit": 10000
+    }
+  }
+}

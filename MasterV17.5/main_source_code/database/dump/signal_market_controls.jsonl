@@ -1,0 +1,17 @@
+{"_id": {"$oid": "6add4d8c8ea91732b39c03f9"}, "source": "deriv", "symbol": "CRASH1000", "timeframe": "1m", "consecutiveLosses": 0, "lastResult": "WIN", "updatedAt": 1792888385.6375635}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6e4"}, "symbol": "BOOM1000", "timeframe": "*", "source": "deriv", "consecutiveLosses": 0, "cooldownUntil": null, "lastResult": "WIN", "updatedAt": 1792887967.6615913}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab6e2"}, "symbol": "BOOM1000", "timeframe": "1m", "source": "deriv", "consecutiveLosses": 0, "lastResult": "WIN", "updatedAt": 1792887967.6615913}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab69c"}, "source": "deriv", "symbol": "CRASH900", "timeframe": "*", "consecutiveLosses": 0, "cooldownUntil": null, "lastResult": "WIN", "updatedAt": 1792888385.6375635}
+{"_id": {"$oid": "6add4c9f8ea91732b39ab69a"}, "source": "deriv", "symbol": "CRASH900", "timeframe": "1m", "consecutiveLosses": 0, "lastResult": "WIN", "updatedAt": 1792888385.6375635}
+{"_id": {"$oid": "6add4c638ea91732b39a5789"}, "symbol": "CRASH1000", "timeframe": "*", "source": "deriv", "consecutiveLosses": 0, "cooldownUntil": null, "lastResult": "WIN", "updatedAt": 1792888806.1390002}
+{"_id": {"$oid": "6add4c638ea91732b39a5785"}, "timeframe": "5m", "source": "deriv", "symbol": "CRASH1000", "consecutiveLosses": 0, "lastResult": "WIN", "updatedAt": 1792888806.1390002}
+{"_id": {"$oid": "6add47398ea91732b391da35"}, "source": "deriv", "symbol": "CRASH500", "timeframe": "*", "consecutiveLosses": 1, "lastResult": "LOSS", "updatedAt": 1792886585.7591443}
+{"_id": {"$oid": "6add47398ea91732b391da33"}, "timeframe": "1m", "source": "deriv", "symbol": "CRASH500", "consecutiveLosses": 1, "lastResult": "LOSS", "updatedAt": 1792886585.7591443}
+{"_id": {"$oid": "6add46c18ea91732b39114b1"}, "source": "deriv", "symbol": "1HZ10V", "timeframe": "*", "consecutiveLosses": 0, "lastResult": "WIN", "updatedAt": 1792887063.8689303, "cooldownUntil": null}
+{"_id": {"$oid": "6add46c18ea91732b39114af"}, "source": "deriv", "symbol": "1HZ10V", "timeframe": "1m", "consecutiveLosses": 0, "lastResult": "WIN", "updatedAt": 1792887063.8689303}
+{"_id": {"$oid": "6add46858ea91732b390775b"}, "timeframe": "*", "source": "deriv", "symbol": "BOOM300N", "consecutiveLosses": 1, "cooldownUntil": null, "lastResult": "LOSS", "updatedAt": 1792887967.6615913}
+{"_id": {"$oid": "6add46858ea91732b3907759"}, "source": "deriv", "symbol": "BOOM300N", "timeframe": "1m", "consecutiveLosses": 1, "lastResult": "LOSS", "updatedAt": 1792887967.6615913}
+{"_id": {"$oid": "6add46858ea91732b3907746"}, "source": "deriv", "symbol": "CRASH600", "timeframe": "*", "consecutiveLosses": 0, "cooldownUntil": null, "lastResult": "WIN", "updatedAt": 1792888385.6375635}
+{"_id": {"$oid": "6add46858ea91732b3907744"}, "source": "deriv", "symbol": "CRASH600", "timeframe": "1m", "consecutiveLosses": 0, "lastResult": "WIN", "updatedAt": 1792888385.6375635}
+{"_id": {"$oid": "6add455b8ea91732b38e6857"}, "symbol": "CRASH300N", "timeframe": "*", "source": "deriv", "consecutiveLosses": 0, "cooldownUntil": null, "lastResult": "WIN", "updatedAt": 1792887185.009879}
+{"_id": {"$oid": "6add455b8ea91732b38e6855"}, "symbol": "CRASH300N", "timeframe": "1m", "source": "deriv", "consecutiveLosses": 0, "lastResult": "WIN", "updatedAt": 1792887185.009879}

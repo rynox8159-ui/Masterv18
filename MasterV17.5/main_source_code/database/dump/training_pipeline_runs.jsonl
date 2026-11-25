@@ -1,0 +1,7 @@
+{"_id": {"$oid": "6add49cfc644f0fb03fa901a"}, "phase": "CANCELLED", "total": 5, "done": 0, "errors": 0, "startedAt": 1792887247.3126628, "finishedAt": 1792887247.5369728, "trained": 0}
+{"_id": {"$oid": "6add49bf5b66942e4035ed8f"}, "phase": "CANCELLED", "total": 86, "done": 0, "errors": 0, "startedAt": 1792887120.9096344, "finishedAt": 1792887231.0237656, "trained": 0}
+{"_id": {"$oid": "6add4860cb4520d5f0e72b94"}, "phase": "CANCELLED", "total": 86, "done": 0, "errors": 0, "startedAt": 1792886803.990102, "finishedAt": 1792886880.6543565, "trained": 0}
+{"_id": {"$oid": "6add473aaed3e1bd5193be83"}, "phase": "CANCELLED", "total": 86, "done": 0, "errors": 0, "startedAt": 1792886557.1529143, "finishedAt": 1792886586.4414704, "trained": 0}
+{"_id": {"$oid": "6add4666a3f8d1864de7bb57"}, "phase": "CANCELLED", "total": 86, "done": 0, "errors": 0, "startedAt": 1792886372.114431, "finishedAt": 1792886374.4288964, "trained": 0}
+{"_id": {"$oid": "6add45961a1ed22d656a9f20"}, "phase": "CANCELLED", "total": 86, "done": 0, "errors": 0, "startedAt": 1792886044.0881126, "finishedAt": 1792886166.2148376, "trained": 0}
+{"_id": {"$oid": "6add4427d66673a5671ef2a1"}, "phase": "CANCELLED", "total": 86, "done": 0, "errors": 0, "startedAt": 1792885773.2044365, "finishedAt": 1792885799.7344315, "trained": 0}

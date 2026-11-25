@@ -1,0 +1,100 @@
+"""Runtime configuration with safe defaults for local/test execution.
+
+The backend is designed to read production settings from environment variables,
+but importing modules in a test or local shell should never crash just because a
+subset of deployment variables is absent. Fallbacks keep the project usable and
+match the documented Deriv defaults.
+"""
+import os
+from urllib.parse import urlencode
+
+
+def _env(key, default=None, *, cast=None):
+    value = os.environ.get(key, default)
+    if value is None:
+        return default
+    if cast is None:
+        return value
+    try:
+        return cast(value)
+    except (TypeError, ValueError):
+        return default
+
+
+_raw_deriv_url = (_env('DERIV_WS_URL') or '').strip()
+_deriv_app_id = str(_env('DERIV_APP_ID', '1089') or '').strip()
+DERIV_APP_ID = _deriv_app_id
+_deriv_app_id_query = f'?{urlencode({"app_id": _deriv_app_id})}' if _deriv_app_id else ''
+if _raw_deriv_url and 'app_id=' not in _raw_deriv_url and _deriv_app_id:
+    separator = '&' if '?' in _raw_deriv_url else '?'
+    _raw_deriv_url = f'{_raw_deriv_url}{separator}app_id={_deriv_app_id}'
+
+OFFICIAL_DERIV_URL = 'wss://api.derivws.com/trading/v1/options/ws/public'
+LEGACY_DERIV_HOSTS = (
+    'wss://ws.derivws.com',
+    'wss://ws.binaryws.com',
+    'wss://frontend.derivws.com',
+)
+
+DERIV_URL = _raw_deriv_url or f'{OFFICIAL_DERIV_URL}{_deriv_app_id_query}'
+DERIV_URL_CANDIDATES = [
+    url for url in list(dict.fromkeys([
+        f'{OFFICIAL_DERIV_URL}{_deriv_app_id_query}',
+        *([_raw_deriv_url] if _raw_deriv_url and not any(_raw_deriv_url.startswith(host) for host in LEGACY_DERIV_HOSTS) else []),
+        f'wss://ws.derivws.com/websockets/v3{_deriv_app_id_query}',
+        f'wss://ws.binaryws.com/websockets/v3{_deriv_app_id_query}',
+        f'wss://frontend.derivws.com/websockets/v3{_deriv_app_id_query}',
+        *([_raw_deriv_url] if _raw_deriv_url and any(_raw_deriv_url.startswith(host) for host in LEGACY_DERIV_HOSTS) else []),
+    ])) if url
+]
+DERIV_ENABLED = _env('DERIV_ENABLED', 'true', cast=lambda value: str(value).lower() == 'true')
+
+_configured_symbols = [s.strip() for s in (_env('DERIV_SYMBOLS', '') or '').split(',') if s.strip()]
+_all_pair_mode = not _configured_symbols or any(symbol.upper() in {'ALL', '*', 'ALL_PAIRS'} for symbol in _configured_symbols)
+DERIV_SYMBOLS = ['ALL'] if _all_pair_mode else list(dict.fromkeys(_configured_symbols))
+
+_default_candle_symbols = 'ALL'
+_configured_candle_symbols = [
+    symbol.strip()
+    for symbol in (_env('DERIV_CANDLE_SYMBOLS', _default_candle_symbols) or '').split(',')
+    if symbol.strip()
+]
+_all_candle_mode = any(
+    symbol.upper() in {'ALL', '*', 'ALL_PAIRS'}
+    for symbol in _configured_candle_symbols
+)
+DERIV_CANDLE_SYMBOLS = ['ALL'] if _all_candle_mode else list(dict.fromkeys(_configured_candle_symbols))
+DERIV_MAX_CANDLE_SYMBOLS = max(
+    1, min(50, _env('DERIV_MAX_CANDLE_SYMBOLS', 20, cast=int)),
+)
+
+_default_timeframes = '1s,5s,15s,1m,5m,10m,15m,30m,1h'
+TIMEFRAMES = {
+    v: int(v[:-1]) * {'s': 1, 'm': 60, 'h': 3600}[v[-1]]
+    for v in (_env('MARKET_TIMEFRAMES', _default_timeframes) or _default_timeframes).split(',')
+    if v.strip()
+}
+FRESHNESS = _env('MARKET_FRESHNESS_SECONDS', 45, cast=int)
+INGEST_HASH = _env('INGESTION_KEY_SHA256', 'local-dev')
+PROVIDER_CONTROL_KEY_SHA256 = (_env('PROVIDER_CONTROL_KEY_SHA256', '') or '').strip().lower()
+PUBLIC_URL = _env('PUBLIC_APP_URL', 'http://localhost:3000')
+OBSERVER_BACKEND_URL = (_env('OBSERVER_BACKEND_URL') or PUBLIC_URL).rstrip('/')
+_cors_origins = _env('CORS_ORIGINS', 'http://localhost:5173,http://127.0.0.1:5173')
+configured_origins = [
+    v.strip() for v in str(_cors_origins).split(',')
+    if v.strip() and v.strip() != '*'
+]
+ORIGINS = list(dict.fromkeys(configured_origins))
+if PUBLIC_URL not in ORIGINS:
+    ORIGINS.append(PUBLIC_URL)
+if PUBLIC_URL.startswith(('http://localhost:', 'http://127.0.0.1:')):
+    for local_origin in ('http://localhost:5173', 'http://127.0.0.1:5173'):
+        if local_origin not in ORIGINS:
+            ORIGINS.append(local_origin)
+codespace_name = _env('CODESPACE_NAME')
+forwarding_domain = _env('GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN', 'app.github.dev')
+if codespace_name:
+    codespaces_frontend_origin = f'https://{codespace_name}-5173.{forwarding_domain}'
+    if codespaces_frontend_origin not in ORIGINS:
+        ORIGINS.append(codespaces_frontend_origin)
+ANALYSIS_INTERVAL = _env('ANALYSIS_INTERVAL_SECONDS', 30, cast=int)
